@@ -263,7 +263,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-purple-100 mb-6 italic">
-                "This tool saved me hours of work! The AI backgrounds look incredibly professional. Highly recommended!"
+                &ldquo;This tool saved me hours of work! The AI backgrounds look incredibly professional. Highly recommended!&rdquo;
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full"></div>
@@ -284,7 +284,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-purple-100 mb-6 italic">
-                "The quality is amazing! My product photos have never looked better. This is a game-changer for my business."
+                &ldquo;The quality is amazing! My product photos have never looked better. This is a game-changer for my business.&rdquo;
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full"></div>
@@ -305,7 +305,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-purple-100 mb-6 italic">
-                "Fast, easy, and stunning results. I can create professional product images without expensive photoshoots!"
+                &ldquo;Fast, easy, and stunning results. I can create professional product images without expensive photoshoots!&rdquo;
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full"></div>

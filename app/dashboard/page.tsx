@@ -4,8 +4,6 @@ import { useState } from "react";
 import { Authenticated, Unauthenticated, useQuery, useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { Id } from "@/convex/_generated/dataModel";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { SignInButton } from "@clerk/nextjs";
 import Header from "@/components/Header";
 import BackgroundChanger from "@/components/BackgroundChanger";

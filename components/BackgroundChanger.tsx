@@ -86,9 +86,9 @@ export default function BackgroundChanger({ projectId }: BackgroundChangerProps)
       } else {
         throw new Error("The API did not return an image. Please try a different prompt.");
       }
-    } catch (e: any) {
+    } catch (e) {
       console.error(e);
-      setError(e.message || "An unexpected error occurred.");
+      setError(e instanceof Error ? e.message : "An unexpected error occurred.");
     } finally {
       setIsLoading(false);
     }
