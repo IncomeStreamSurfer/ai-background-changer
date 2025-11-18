@@ -43,5 +43,5 @@ next-env.d.ts
 # clerk configuration (can include secrets)
 /.clerk/
 
-# convex generated files
-/convex/_generated/
+# convex generated files (committing for production build)
+# /convex/_generated/
