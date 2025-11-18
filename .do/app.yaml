@@ -1,0 +1,32 @@
+name: ai-background-changer
+region: nyc
+services:
+  - name: web
+    github:
+      repo: IncomeStreamSurfer/ai-background-changer
+      branch: main
+      deploy_on_push: true
+    build_command: npm install && npm run build
+    run_command: npm start
+    environment_slug: node-js
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    http_port: 3000
+    routes:
+      - path: /
+    envs:
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_PUBLIC_CONVEX_URL
+        value: https://flexible-sturgeon-695.convex.cloud
+      - key: CONVEX_DEPLOYMENT
+        value: dev:flexible-sturgeon-695
+      - key: NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+        value: pk_test_dG9nZXRoZXItZG9nLTQzLmNsZXJrLmFjY291bnRzLmRldiQ
+        type: SECRET
+      - key: CLERK_SECRET_KEY
+        value: sk_test_xQ5ler6ARaI6DI2XOIMHTKJiczi47BIqpK6IXt8kyj
+        type: SECRET
+      - key: CLERK_JWT_ISSUER_DOMAIN
+        value: https://together-dog-43.clerk.accounts.dev
+        type: SECRET
